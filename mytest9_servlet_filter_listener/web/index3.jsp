@@ -19,12 +19,12 @@
           }
       }
   </script>
-  <link href="style3.css" rel="stylesheet" type="text/css">
+  <link href="package3/style3.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div align="center">
   <table width="506" height="170" border="0" cellpadding="0"
-         cellspacing="0" background="image/background1.jpg">
+         cellspacing="0" background="package3/image/background1.jpg">
     <tr>
       <td align="center">
         <form name="form" method="post" action="showUser.jsp" onsubmit="checkEmpty(form)">

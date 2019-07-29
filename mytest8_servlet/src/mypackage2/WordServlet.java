@@ -1,11 +1,41 @@
 package mypackage2;
 
+import javax.servlet.*;
+import java.io.IOException;
+import java.io.PrintWriter;
+
 /**
  * FileName: WordServlet
  * Author: nanzong
- * Date: 2019/7/18 9:18 AM
  * Description:
  * History:
  */
-public class WordServlet {
+public class WordServlet implements Servlet {
+
+    @Override
+    public void init(ServletConfig servletConfig) throws ServletException {
+
+    }
+
+    @Override
+    public ServletConfig getServletConfig() {
+        return null;
+    }
+
+    @Override
+    public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
+        PrintWriter pwt = servletResponse.getWriter();
+        pwt.println("南城的人");
+        pwt.close();
+    }
+
+    @Override
+    public String getServletInfo() {
+        return null;
+    }
+
+    @Override
+    public void destroy() {
+
+    }
 }

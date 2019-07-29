@@ -7,10 +7,13 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
-    <title>$Title$</title>
-  </head>
-  <body>
-  $END$
-  </body>
+<head>
+    <title>文件上传</title>
+</head>
+<body>
+<form action="/UploadServlet" enctype="multipart/form-data" method="post">
+    选择文件 <input type="file" name="uploadFile">
+    <input type="submit" value="上传">
+</form>
+</body>
 </html>

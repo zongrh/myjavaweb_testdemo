@@ -8,12 +8,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>文件上传</title>
+    <title>文件下载</title>
 </head>
 <body>
-<form action="/UploadServlet" enctype="multipart/form-data" method="post">
-    选择文件 <input type="file" name="uploadFile">
-    <input type="submit" value="上传">
-</form>
+<a href="download/1.gif" rel="nofollow">下载图片</a>
+<a href="download/2.txt" rel="nofollow">下载文档</a>
+<a href="download/3.doc" rel="nofollow">下载笔记</a>
+
 </body>
 </html>

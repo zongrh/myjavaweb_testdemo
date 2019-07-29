@@ -3,4 +3,61 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+    <!--启动tomcat后默认展示的页面-->
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.htm</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+
+        <welcome-file>index4.html</welcome-file>
+        <welcome-file>index4.htm</welcome-file>
+        <welcome-file>index4.jsp</welcome-file>
+
+
+        <welcome-file>servlet/Myservlet</welcome-file>
+    </welcome-file-list>
+
+    <!-- Test 3 -->
+    <servlet>
+        <servlet-name>MyServlet</servlet-name>
+        <servlet-class>mypackage3.MyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MyServlet</servlet-name>
+        <url-pattern>/servlet/Myservlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Test 4 -->
+    <servlet>
+        <description></description>
+        <display-name>RegServlet</display-name>
+        <servlet-name>RegServlet</servlet-name>
+        <servlet-class>mypackage4.RegServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegServlet</servlet-name>
+        <url-pattern>/servlet/RegServlet</url-pattern>
+    </servlet-mapping>
+    <!-- Test 5 -->
+    <servlet>
+        <description></description>
+        <display-name>AddServlet</display-name>
+        <servlet-name>AddServlet</servlet-name>
+        <servlet-class>mypackage5.AddServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddServlet</servlet-name>
+        <url-pattern>/servlet/AddServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <description></description>
+        <display-name>CalculateServlet</display-name>
+        <servlet-name>CalculateServlet</servlet-name>
+        <servlet-class>mypackage6.CalculateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CalculateServlet</servlet-name>
+        <url-pattern>/CalculateServlet</url-pattern>
+    </servlet-mapping>
+
 </web-app>

@@ -1,4 +1,5 @@
-package PACKAGE_NAME;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
 
 /**
  * FileName: TestServlet
@@ -7,5 +8,5 @@ package PACKAGE_NAME;
  * Description:
  * History:
  */
-public class TestServlet {
+public class TestServlet extends HttpServlet {
 }

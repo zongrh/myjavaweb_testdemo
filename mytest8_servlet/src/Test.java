@@ -1,11 +1,17 @@
-package PACKAGE_NAME;
+import mypackage1.TestServlet;
+import mypackage2.WordServlet;
+import sun.applet.Main;
+
+import javax.servlet.ServletException;
 
 /**
  * FileName: Test
  * Author: nanzong
- * Date: 2019/7/18 9:17 AM
  * Description:
  * History:
  */
 public class Test {
+    public static void main(String[] args) throws ServletException {
+
+    }
 }
