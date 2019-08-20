@@ -27,7 +27,7 @@ public class FindServlet5 extends HttpServlet {
             // 加载数据库驱动，注册到驱动管理器
             Class.forName("com.mysql.jdbc.Driver");
             // 数据库连接字符串
-            String url = "jdbc:mysql://localhost:3306/mytest_db";
+            String url = "jdbc:mysql://localhost:3306/db_database10";
             // 数据库用户名
             String username = "root";
             // 数据库密码
