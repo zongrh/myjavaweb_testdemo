@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <!--根元素下第一个子元素 <modeVersion> 指定了当前POM模板的版本，对于现在大多数开发者而言，
+    Maven 2  Maven 3 这个版本号只能为4.0.0。-->
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--<groupId> 定义了该项目属于哪个项目组，在企业级开发中，通常和该项目所属的组织和公司有关。-->
+    <groupId>cn.hibernate</groupId>
+
+    <!--<artifactId>定义了当前Maven项目在项目组的唯一一个ID，本文中 Hello Maven artifactId为hello-Maven，
+    在实际开发中会分配其他的 artifactId ，而之前的 groupId ，可能会为不同的子项目（模块）分配artifactId。-->
+    <artifactId>hibernate_xml_Project</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <!--设置编码规范-->
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencies>
+        <!-- 添加Junit依赖 -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
+
+        <!-- 添加mysql驱动依赖 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.39</version>
+        </dependency>
+
+        <!-- 添加hibernate依赖包 -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>5.2.6.Final</version>
+        </dependency>
+        <!--serlvet-->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
+        </dependency>
+
+    </dependencies>
+
+</project>

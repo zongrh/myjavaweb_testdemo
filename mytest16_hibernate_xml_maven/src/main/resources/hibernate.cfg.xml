@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- 配置连接数据库的基本信息 -->
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <!--<property name="connection.url">jdbc:mysql://localhost:3306/db_hibernate</property>-->
+        <property name="connection.url">jdbc:mysql://localhost:3306/db_database16?useUnicode=true&amp;characterEncoding=UTF-8</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">123456</property>
+
+
+
+        <!--数据库方言-->
+        <property name="dialect">org.hibernate.dialect.MySQLInnoDBDialect</property>
+        <!--显示sql语句-->
+        <property name="show_sql">true</property>
+        <!--格式化sql语句-->
+        <property name="format_sql">true</property>
+        <!--根据需要创建数据库-->
+        <property name="hibernate.hbm2ddl.auto">create</property>
+
+        <!--hibernate的数据库映射类-->
+        <mapping class="cn.hibernate.model1.TbEmployeeEntity"/>
+        <!--hibernate的数据映射文件-->
+        <!--<mapping resource="cn/hibernate/model1/TbEmployeeEntity.hbm.xml"/>-->
+
+
+
+        <!--<mapping class="cn.hibernate.model.TabProductEntity"/>-->
+        <!--<mapping class="cn.hibernate.model.TbStudentsEntity"/>-->
+
+    </session-factory>
+</hibernate-configuration>
