@@ -23,7 +23,7 @@
         // 加载数据库驱动，注册到驱动管理器
         Class.forName("com.mysql.jdbc.Driver");
         // 数据库连接字符串
-        String url = "jdbc:mysql://localhost:3306/mytest_db?useUnicode=true&characterEncoding=utf8";
+        String url = "jdbc:mysql://localhost:3306/db_database10?useUnicode=true&characterEncoding=utf8";
         // 数据库用户名
         String username = "root";
         // 数据库密码
@@ -39,10 +39,13 @@
         System.out.println("name：" + book.getName());
         // 对SQL语句中的第2个参数赋值
         ps.setDouble(2, book.getPrice());
+        System.out.println("price：" + book.getPrice());
         // 对SQL语句中的第3个参数赋值
         ps.setInt(3, book.getBookCount());
+        System.out.println("bookcount：" + book.getBookCount());
         // 对SQL语句中的第4个参数赋值
         ps.setString(4, book.getAuthor());
+        System.out.println("author：" + book.getAuthor());
         // 执行更新操作，返回所影响的行数
         int row = ps.executeUpdate();
         // 判断是否更新成功
@@ -50,6 +53,7 @@
             // 更新成输出信息
             out.print("成功添加了 " + row + "条数据！");
         }
+        System.out.println("图书信息 ：" + book.toString());
         // 关闭PreparedStatement，释放资源
         ps.close();
         // 关闭Connection，释放资源
