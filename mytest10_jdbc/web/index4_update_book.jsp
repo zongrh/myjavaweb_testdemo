@@ -25,19 +25,20 @@
 
     </style>
     <script type="text/javascript">
-        function check(form){
-            with(form){
-                if(bookCount.value == ""){
+        function check(form) {
+            with (form) {
+                if (bookCount.value == "") {
                     alert("请输入更新数量！");
                     return false;
                 }
-                if(isNaN(bookCount.value)){
+                if (isNaN(bookCount.value)) {
                     alert("格式错误！");
                     return false;
                 }
-                return true;;
+                return true;
+                ;
             }
-
+        }
     </script>
 
 </head>

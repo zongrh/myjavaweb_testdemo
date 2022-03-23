@@ -51,7 +51,7 @@ public class Batch {
         String sql = "insert into mytest_user(id,name,sex,age) value(?,?,?,?)";
         PreparedStatement ps = conn.prepareStatement(sql);
         Random random = new Random();
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 100; i++) {
             ps.setInt(1, i++);
             ps.setString(2, "学生" + i);
             ps.setString(3, i % 2 == 0 ? "男" : "女");

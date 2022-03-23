@@ -11,6 +11,6 @@
     <title>查看所有图书</title>
   </head>
   <body>
-<a  href="findBookList2">查看所有图书</a>
+<a  href="findBookList4">查看所有图书</a>
   </body>
 </html>
